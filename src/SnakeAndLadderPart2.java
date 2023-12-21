@@ -28,6 +28,8 @@ public class SnakeAndLadderPart2 {
             case 1:
                 System.out.println("Ladder! Player moves ahead by " + diceValue + " positions.");
                 playerPositions[currentPlayer] += diceValue;
+                //Will play again
+                playTurn();
                 break;
             case 2:
                 System.out.println("Snake! Player moves behind by " + diceValue + " positions.");
